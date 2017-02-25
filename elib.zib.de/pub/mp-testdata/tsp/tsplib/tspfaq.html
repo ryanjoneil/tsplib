@@ -1,0 +1,112 @@
+<HTML>
+
+<!-- Mirrored from elib.zib.de/pub/mp-testdata/tsp/tsplib/tspfaq.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Feb 2017 00:20:18 GMT -->
+<HEAD>
+<TITLE>TSPLIB FAQ</TITLE>
+</HEAD>
+
+<BODY>
+<H1>TSPLIB: Questions and answers</H1>
+<BR>
+<HR>
+Q: I found a better solution than the one claimed to be optimal in TSPLIB,
+is this possible?
+<BR><BR>
+A: This never occured so far. In 
+all cases when someone believed to have found a better solution, it
+was not taken into account that it is exactly specified how distances
+for TSPLIB problems have to computed. Typical errors are 
+<UL><LI>
+evaluation of
+distances for geometric problem instances as floating-point numbers,
+<BR><LI>
+false computation of geographic distances,
+<BR><LI>
+use of display coordinates for distance computations.
+<BR>
+</UL>
+Note, however, that due to round-off errors distance evaluations may slightly differ on different machines.
+<HR>
+Q: I get wrong distances for problems of type GEO.
+<BR><BR>
+A: In a previous release there was a typing error in the distance
+specification for these problems. The formulae for computing latitude[i]
+and longitude[i] should read
+<UL>
+latitude[i] = PI * (deg + 5.0 * min / 3.0 ) / 180.0;
+<BR>
+longitude[i] = PI * (deg + 5.0 * min / 3.0 ) / 180.0;
+</UL>
+<HR>
+Q: What does the function nint() do?
+<BR><BR>
+A: The function "int nint (double x)"
+converts x into int format rounding  to  the  nearest
+int value, except halfway cases are rounded to the int value
+larger in magnitude.  This corresponds to the  Fortran  generic 
+intrinsic function nint. 
+<HR>
+Q: Are contributions still welcome?
+<BR><BR>
+A: Basically yes, but, in view of the many problem instances that are
+already available, new instances should either be real challenge
+problems or be of general interest.
+<HR>
+Q: Is an optimal tour available for every solved problem instance?
+<BR><BR>
+A: No. We have included several optimal tours for testing purposes. It is
+not intended to provide all optimal tours. It should still be a
+challenge to find one.
+<HR>
+Q: Are there optimal solutions available for instances other than symmetric
+ones?
+<BR><BR>
+A: So far, no other optimal solutions have been made available.
+<HR>
+Q: Which format has been used to store the data?
+<BR><BR>
+A: All data has been compressed with the command "gzip" and has to be
+read using "gzip -d". Please contact your system administrator
+if this command is not available.
+<HR>
+<BR>
+<H1>Some remarks</H1>
+<BR>
+Problem a280 contains a double node, so there are essentially only 279 nodes.
+We have not changed the problem name, though.
+<BR>
+<HR>
+<H1>References</H1>
+<BR>
+Applegate, D., Bixby, R., Chvatal, V. and W. Cook (1994),
+"Finding cuts in the TSP (A preliminary report)",
+Research Report, Rice University
+<BR><BR>
+Ju"nger, M., G. Reinelt and G. Rinaldi (1996),
+"The Traveling Salesman Problem", in:
+M. Ball, T. Magnanti, C. L. Monma and G.L. Nemhauser (eds.),
+Handbooks in Operations Research and Management Sciences: Networks,
+North-Holland
+<BR><BR>
+Ju"nger, M., G. Reinelt and S. Thienel (1994),
+"Optimal and Provably Good Solutions for the Symmetric Traveling 
+Salesman Problem",
+Zeitschrift fu"r Operations Research (40), 183-217
+<BR><BR>
+Padberg, M.W. and G. Rinaldi (1987),
+"Optimization of a 532 City Symmetric Traveling Salesman Problem by
+Branch and Cut",
+Operations Research Letters (6), 1-7
+<BR><BR>
+Padberg, M.W. and G. Rinaldi (1991),
+"A Branch and Cut Algorithm for the Resolution of Large-scale Symmetric
+Traveling Salesman Problems"
+SIAM Review (33), 60-100}
+<BR><HR>
+<BR><BR>
+<ADDRESS> Last change: December 05, 1996</ADDRESS>
+</BODY>
+
+
+<!-- Mirrored from elib.zib.de/pub/mp-testdata/tsp/tsplib/tspfaq.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Feb 2017 00:20:18 GMT -->
+</HTML>

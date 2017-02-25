@@ -1,0 +1,165 @@
+<HTML>
+
+<!-- Mirrored from elib.zib.de/pub/mp-testdata/tsp/tsplib/tsplib.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Feb 2017 00:20:18 GMT -->
+<HEAD>
+<TITLE>TSPLIB</TITLE>
+</HEAD>
+
+<BODY>
+
+<H1><IMG SRC="tsplogo.gif"></H1>
+
+<H1><BR><A HREF=TSPLIB_VERSION.html><B1>TSPLIB</B1></A></H1>
+<BR>
+TSPLIB is a library of
+sample instances for the TSP (and related problems)
+from various sources and of various types.
+Instances of the following problem classes are available.
+
+<H2>Symmetric traveling salesman problem (TSP)</H2>
+
+Given a set of n nodes and distances for each pair of nodes, find a
+roundtrip of minimal total length visiting each node exactly once.
+The distance from node i to node j is the same as from node
+j to node i.
+
+<DL>
+<DT> <A HREF="tsp/index.html"> TSP data</A>
+</DL>
+
+<A HREF="stsp-sol.html">
+Best known solutions for symmetric TSPs</A>
+<HR>
+
+<H2>Hamiltonian cycle problem (HCP)</H2>
+
+Given a graph, test if the graph contains a Hamiltonian cycle or not.
+
+<DL>
+<DT> <A HREF="hcp/index.html"> HCP data</A>
+</DL>
+
+<H2>Asymmetric traveling salesman problem (ATSP)</H2>
+
+Given a set of n nodes and distances for each pair of nodes, find a
+roundtrip of minimal total length visiting each node exactly once.
+In this case, the distance from node i to node j and the
+distance from node j to node i may be different.
+
+<DL>
+<DT> <A HREF="atsp/index.html"> ATSP data</A>
+</DL>
+
+<A HREF="atsp-sol.html">
+Best known solutions for asymmetric TSPs</A>
+<HR>
+
+<H2>Sequential ordering problem (SOP)</H2>
+
+This problem is an asymmetric traveling salesman problem with additional
+constraints. Given a set of n nodes and distances for each pair of nodes,
+find a Hamiltonian path from node 1 to node n of minimal length which
+takes given precedence constraints into account. Each precedence constraint
+requires that some node i has to be visited before some other node j.
+
+<DL>
+<DT> <A HREF="sop/index.html"> SOP data</A>
+</DL>
+
+<A HREF="sop-sol.html">
+Best known solutions for sequential ordering problems</A>
+<HR>
+
+<H2>Capacitated vehicle routing problem (CVRP)</H2>
+
+We are given n-1 nodes, one depot and distances from the nodes to
+the depot, as well as between nodes. All nodes have demands which 
+can be satisfied by the depot.
+For delivery to the nodes, trucks with identical capacities are
+available. The problem is to find tours for the trucks of minimal
+total length that satisfy the node demands without violating truck
+capacity constraint. The number of trucks is not
+specified. Each tour visits a subset of the nodes and starts and
+terminates at the depot. 
+(Remark: In some data files a collection of alternate depots is given.
+A CVRP is then given by selecting one of these depots.)
+
+<DL>
+<DT> <A HREF="vrp/index.html"> CVRP data</A>
+</DL>
+
+<HR>
+
+<H2>Remark</H2>
+
+Except for the Hamiltonian cycle problems,
+all problems instances
+are defined on a complete graph and, at present, all distances
+are integer numbers.
+There is a possibility to require that certain edges appear in
+the solution of a problem.
+
+<HR>
+
+<!--
+<H2>Description</H2>
+
+A complete description of the library is given
+<A HREF="http://softlib.rice.edu/pub/tsplib/DOC.ps.gz">here</A>
+<BR><BR>
+
+<HR> -->
+
+<H2>Frequently asked questions</H2>
+
+We have a small collection of answers to frequently asked questions 
+<A HREF="tspfaq.html">(FAQ)</A>.
+<HR>
+
+<H2>Mirror sites</H2>
+
+TSPLIB is also available at Konrad-Zuse-Zentrum in Berlin:<br>
+
+<A HREF="http://elib.zib-berlin.de/pub/Packages/mp-testdata/tsp/index.html">
+http://elib.zib-berlin.de/pub/Packages/mp-testdata/tsp/index.html</A>
+<br>
+and at Rice University:<br>
+
+<A HREF="http://nhse.cs.rice.edu/softlib/catalog/tsplib.html">
+http://nhse.cs.rice.edu/softlib/catalog/tsplib.html</A>
+
+<HR>
+<H2>Literature</H2>
+
+Pablo Moscate is compiling a
+<A HREF=http://www.ing.unlp.edu.ar/cetad/mos/TSPBIB_home.html>bibliography</A>
+of TSP related papers and software.
+<HR>
+
+<H2>Address</H2>
+<UL>
+<DL>
+<DT> Gerhard Reinelt
+<DT> Universit&auml;t Heidelberg
+<DT> Institut f&uuml;r Angewandte Mathematik
+<DT> Im Neuenheimer Feld 294
+<DT> D - 69120 Heidelberg
+<DT> Germany
+<P>
+<DT> tel: ++49/6221/54-6171
+<DT> fax: ++49/6221/54-5634
+<DT> e-mail: Gerhard.Reinelt@IWR.Uni-Heidelberg.de
+</DL>
+</UL>
+
+
+<HR>
+
+<ADDRESS> Last change: February 19, 1997 </ADDRESS>
+
+<h3> Return to <a href=http://www.iwr.uni-heidelberg.de/iwr/comopt/home.html> our group</a> </h3>
+</BODY>
+
+
+<!-- Mirrored from elib.zib.de/pub/mp-testdata/tsp/tsplib/tsplib.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Feb 2017 00:20:18 GMT -->
+</HTML>
